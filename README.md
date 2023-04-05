@@ -180,7 +180,7 @@ const delBookmark = async (req, res) =>{
 </details>
 
 <details>
-<summary><b`javascriptScript</b></summary>
+<summary><b>javaScript</b></summary>
 
 ```javascript
 // 북마크 참조 요소
@@ -277,9 +277,10 @@ const addScore = async function(req,res){
   }
 
 ```
+</details>
 
 <details>
-<summary><b`javascriptScript</b></summary>
+<summary><b>javasScript</b></summary>
 
 ```javascript
 const stars = document.querySelectorAll(".star");
@@ -358,7 +359,6 @@ browseRouter.post("/watch/:id", isLoggedIn, review);
 
 <details>
 <summary><b>Controller&Model</b></summary>
-</details>
 
 ```javascript
 // 리뷰 DB에 저장하기
@@ -393,13 +393,14 @@ const review = async(req,res) => {
   const cnt = result.review ? result.review.length : 0;
 
 ```
+<details>
 </div>
 </details>
 
 </br>
 
 ## 5. 핵심 트러블 슈팅
----
+
 ### 5.1. **비디오 스트리밍 방법에 대한 문제**
 - 처음 개발 시 DB에 저장된 비디오 경로를 ejs파일에 \<video> 태그안에 직접 넣어 동영상 파일을 바로 불러올 수 있도록 처리 
 - 데이터가 큰 동영상 파일을 불러올 시 한번에 데이터를 다 불러온 다음 실행되기 때문에 서비스에 장애가 될 수 있음 
@@ -408,7 +409,6 @@ const review = async(req,res) => {
 - fs(file system)모듈을 활용한 stream 을 사용하여 해결 
 - 해당 모듈을 사용하여 stream을 할 경우 데이터를 모듈화하여 보내기 때문에 클라이언트도 서버도 데이터에 대한 부담을 줄일 수 있다.
 - [코드확인](#4-구현-기능-핵심-코드)
-
 
 </div>
 </details>
