@@ -17,7 +17,7 @@
 #### `Front-end`
   - HTML
   - CSS
--`javascriptScript ES6
+- javaScript ES6
 
 
 ## 3. 내 역할과 업무성과
