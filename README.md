@@ -17,7 +17,7 @@
 #### `Front-end`
   - HTML
   - CSS
-- JavaScript ES6
+-`javascriptScript ES6
 
 
 ## 3. 내 역할과 업무성과
@@ -32,14 +32,14 @@
 
 ### 4.1. 전체 흐름
 
-<img src="./img/MVC전체흐름.png" alt="">
+![mvc](https://github.com/WonJae0914/secondProject/blob/main/portflio/img/MVC%EC%A0%84%EC%B2%B4%ED%9D%90%EB%A6%84.png?raw=true)
 
 ### 4.2. 비디오 스트리밍 기능
 
 <details>
 <summary> <b>Router</b> </summary>
 
-```java
+```javascript
 //get
 browseRouter.get("/video", videos);
 ```
@@ -49,7 +49,7 @@ browseRouter.get("/video", videos);
 <details>
 <summary> <b>Controller&Model</b> </summary>
 
-```java
+```javascript
 // 동영상 파일 경로 생성 함수
 const getVideoPath = (id) => {
     return `videos/${id}.mp4`;
@@ -118,7 +118,7 @@ const getVideoPath = (id) => {
 <details>
 <summary><b>Router</b></summary>
 
-```java
+```javascript
 //get
 browseRouter.get("/bookmark/:id",isLoggedIn ,video); // 북마크 
 //post
@@ -130,7 +130,7 @@ browseRouter.post("/bookmark", isLoggedIn ,addbookmark, delBookmark); // 북마�
 <details>
 <summary><b>Controller&Model</b></summary>
 
-```java
+```javascript
 // 북마크 생성 함수 
 const addbookmark = async (req, res, next) =>{
   // 요청 받은 컨텐츠 타이틀 데이터
@@ -180,9 +180,9 @@ const delBookmark = async (req, res) =>{
 </details>
 
 <details>
-<summary><b>JavaScript</b></summary>
+<summary><b`javascriptScript</b></summary>
 
-```java
+```javascript
 // 북마크 참조 요소
 const bookmark = document.querySelector(".rating-bookmark");
 const title = document.querySelector("#movie").dataset.title;
@@ -216,7 +216,7 @@ bookmark.addEventListener("click", bookmarkHandler);
 <details>
 <summary><b>Router</b></summary>
 
-```java
+```javascript
 browseRouter.post("/score", isLoggedIn, starScore); // 별점 
 ```
 
@@ -225,7 +225,7 @@ browseRouter.post("/score", isLoggedIn, starScore); // 별점
 <details>
 <summary><b>Controller&Model</b></summary>
 
-```java
+```javascript
 // 별점 생성
 const addScore = async function(req,res){
     try {
@@ -279,9 +279,9 @@ const addScore = async function(req,res){
 ```
 
 <details>
-<summary><b>JavaScript</b></summary>
+<summary><b`javascriptScript</b></summary>
 
-```java
+```javascript
 const stars = document.querySelectorAll(".star");
 const subStarbtn = document.querySelector(".subStar");
 const userTitle = document.querySelector("#movie").dataset.title;
@@ -349,7 +349,7 @@ stars.forEach(function (star) {
 <details>
 <summary><b>Router</b></summary>
 
-```java
+```javascript
 //post
 browseRouter.post("/watch/:id", isLoggedIn, review);
 ```
@@ -360,7 +360,7 @@ browseRouter.post("/watch/:id", isLoggedIn, review);
 <summary><b>Controller&Model</b></summary>
 </details>
 
-```java
+```javascript
 // 리뷰 DB에 저장하기
 const review = async(req,res) => {
     const id = parseInt(req.params.id);
@@ -408,7 +408,6 @@ const review = async(req,res) => {
 - fs(file system)모듈을 활용한 stream 을 사용하여 해결 
 - 해당 모듈을 사용하여 stream을 할 경우 데이터를 모듈화하여 보내기 때문에 클라이언트도 서버도 데이터에 대한 부담을 줄일 수 있다.
 - [코드확인](#4-구현-기능-핵심-코드)
-
 
 
 </div>
