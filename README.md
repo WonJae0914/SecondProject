@@ -393,7 +393,7 @@ const review = async(req,res) => {
   const cnt = result.review ? result.review.length : 0;
 
 ```
-<details>
+</details>
 </div>
 </details>
 
