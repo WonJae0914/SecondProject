@@ -32,7 +32,7 @@
 
 ### 4.1. 전체 흐름
 
-![mvc](https://github.com/WonJae0914/secondProject/blob/main/portflio/img/MVC%EC%A0%84%EC%B2%B4%ED%9D%90%EB%A6%84.png?raw=true1)
+![mvc](https://github.com/WonJae0914/secondProject/blob/main/portflio/img/MVC%EC%A0%84%EC%B2%B4%ED%9D%90%EB%A6)
 
 ### 4.2. 비디오 스트리밍 기능
 
