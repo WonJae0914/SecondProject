@@ -1,4 +1,4 @@
-# :pushpin: 성인 등급 영화 OTT 플랫폼 서비스
+# :pushpin: 영화 OTT 플랫폼 서비스
 
 
 
